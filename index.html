@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Análise e explicações sobre funcionamento óptico de lupa, microscópio e luneta — histórico e conceitos." />
+  <title>Vendo o mundo por outras lentes</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
+  <!-- Cabeçalho do Site -->
+  <header class="topo-site" role="banner">
+    <h1>Site sobre óptica</h1>
+  </header>
+
+  <!-- Seção Principal de Conteúdo -->
+  <main id="main" class="container" role="main">
+    <!-- 1. Espaço para a Descrição Principal -->
+    <section class="secao-descricao">
+      <h2>Descrição</h2>
+      <p>
+        Neste site iremos analisar e comentar sobre as funções ópticas de equipamentos e objetos:
+        lupa, microscópio e luneta. O objetivo é ajudar você a entender esses funcionamentos
+        e conhecer um pouco da história por trás de cada um.
+      </p>
+    </section>
+
+    <!-- 2. Espaço para as Três Coisas (Lado a Lado) -->
+    <section class="tres-coisas" aria-label="Equipamentos ópticos">
+      <article class="card" aria-labelledby="lupa-title">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1546901071-a7a5e4b7b38b?auto=format&fit=crop&w=800&q=70"
+            alt="Lupa de mão ampliando texto"
+            width="800"
+            height="533"
+            loading="lazy"
+          />
+          <figcaption>Lupa</figcaption>
+        </figure>
+        <h3 id="lupa-title">Lupa</h3>
+        <p>
+          A lupa é um instrumento óptico simples, formada por uma única lente convergente.
+          É usada para ampliar a aparência de objetos próximos, facilitando a leitura de detalhes.
+        </p>
+      </article>
+
+      <article class="card" aria-labelledby="micro-title">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1581091215367-6b7e3f0f3d5a?auto=format&fit=crop&w=800&q=70"
+            alt="Microscópio de laboratório"
+            width="800"
+            height="533"
+            loading="lazy"
+          />
+          <figcaption>Microscópio</figcaption>
+        </figure>
+        <h3 id="micro-title">Microscópio</h3>
+        <p>
+          O microscópio é fundamental em ciência e medicina. Existem microscópios ópticos
+          (fotônicos), eletrônicos e outros, cada um com princípios e aplicações diferentes.
+        </p>
+      </article>
+
+      <article class="card" aria-labelledby="luneta-title">
+        <figure>
+          <img
+            src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=70"
+            alt="Luneta apontada para o céu"
+            width="800"
+            height="533"
+            loading="lazy"
+          />
+          <figcaption>Luneta</figcaption>
+        </figure>
+        <h3 id="luneta-title">Luneta</h3>
+        <p>
+          A luneta (ou telescópio refrator) existe em versões terrestres e astronômicas;
+          usa lentes para formar imagens ampliadas de objetos distantes.
+        </p>
+      </article>
+    </section>
+
+    <!-- 3. Espaço para o Glossário e o Vídeo -->
+    <section class="secao-midia">
+      <div class="bloco-glossario">
+        <h2>Glossário</h2>
+        <p class="subtitulo-glossario">Definições dos principais conceitos do projeto:</p>
+
+        <dl class="lista-glossario">
+          <dt>Fotônica</dt>
+          <dd>
+            Ciência e tecnologia que estuda a geração, manipulação, transmissão e detecção de fótons.
+          </dd>
+
+          <dt>Estereoscópico</dt>
+          <dd>Popularmente conhecido como lupa binocular.</dd>
+        </dl>
+      </div>
+
+      <figure class="video-figure" aria-labelledby="video-title">
+        <h2 id="video-title">Vídeo demonstrativo</h2>
+
+        <!-- Option A: native <video> (recommended if you host the MP4 directly) -->
+        <!-- Replace the src with a direct file URL (hosted in the repo or on a CDN) -->
+        <video controls preload="metadata" width="720" poster="poster.jpg">
+          <source src="https://drive.google.com/uc?export=download&id=1rKvVWdOTf_hqmeE0OryPW5YEc3218cxk" type="video/mp4" />
+          Seu navegador não suporta a tag de vídeo. Você pode baixar o arquivo
+          <a href="https://drive.google.com/uc?export=download&id=1rKvVWdOTf_hqmeE0OryPW5YEc3218cxk">aqui</a>.
+        </video>
+
+        <!-- Option B: Google Drive embed fallback (works if you prefer Drive preview) -->
+        <!--
+        <iframe src="https://drive.google.com/file/d/1rKvVWdOTf_hqmeE0OryPW5YEc3218cxk/preview"
+                width="720" height="405" allow="autoplay; encrypted-media" title="Vídeo demonstrativo"></iframe>
+        -->
+
+        <figcaption>Vídeo explicando princípios ópticos — reprodução com controles.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <!-- Rodapé do Site -->
+  <footer role="contentinfo">
+    <p>© 2026 - Desenvolvido por mim, no GitHub Codespaces</p>
+  </footer>
+</body>
+</html>
