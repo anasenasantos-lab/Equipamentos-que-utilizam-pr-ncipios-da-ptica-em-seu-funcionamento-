@@ -3,24 +3,54 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Análise e explicações sobre funcionamento óptico de lupa, microscópio e luneta — histórico e conceitos." />
   <title>Vendo o mundo por outras lentes</title>
+
+  <!-- Basic SEO & Social -->
+  <meta name="description" content="Análise e explicações sobre funcionamento óptico de lupa, microscópio e luneta — histórico e conceitos." />
+  <link rel="canonical" href="https://anasenasantos-lab.github.io/Equipamentos-que-utilizam-pr-ncipios-da-ptica-em-seu-funcionamento-/"/>
+  <meta property="og:title" content="Vendo o mundo por outras lentes" />
+  <meta property="og:description" content="Análise e explicações sobre funcionamento óptico de lupa, microscópio e luneta." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://anasenasantos-lab.github.io/Equipamentos-que-utilizam-pr-ncipios-da-ptica-em-seu-funcionamento-/" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" />
+
+  <!-- Styles: consider adding a small inline critical CSS for .skip-link, then load style.css deferred -->
   <link rel="stylesheet" href="style.css" />
+  <!-- Consider: <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'"> -->
+  <script>
+    // Minimal enhancement: hide no-js elements if needed
+    document.documentElement.classList.remove('no-js');
+  </script>
+
+  <!-- Structured data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Vendo o mundo por outras lentes",
+    "url": "https://anasenasantos-lab.github.io/Equipamentos-que-utilizam-pr-ncipios-da-ptica-em-seu-funcionamento-/"
+  }
+  </script>
 </head>
 <body>
-  <!-- Skip link for keyboard users -->
   <a class="skip-link" href="#main">Pular para o conteúdo</a>
 
-  <!-- Cabeçalho do Site -->
   <header class="topo-site" role="banner">
     <h1>Site sobre óptica</h1>
+    <nav aria-label="Navegação principal">
+      <ul class="nav-list">
+        <li><a href="#descricao">Descrição</a></li>
+        <li><a href="#equipamentos">Lupa · Microscópio · Luneta</a></li>
+        <li><a href="#midia">Vídeo / Glossário</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Seção Principal de Conteúdo -->
   <main id="main" class="container" role="main">
-    <!-- 1. Espaço para a Descrição Principal -->
-    <section class="secao-descricao">
+    <section id="descricao" class="secao-descricao">
       <h2>Descrição</h2>
       <p>
         Neste site iremos analisar e comentar sobre as funções ópticas de equipamentos e objetos:
@@ -29,17 +59,22 @@
       </p>
     </section>
 
-    <!-- 2. Espaço para as Três Coisas (Lado a Lado) -->
-    <section class="tres-coisas" aria-label="Equipamentos ópticos">
+    <section id="equipamentos" class="tres-coisas" aria-label="Equipamentos ópticos">
       <article class="card" aria-labelledby="lupa-title">
         <figure>
-          <img
-            src="https://images.unsplash.com/photo-1546901071-a7a5e4b7b38b?auto=format&fit=crop&w=800&q=70"
-            alt="Lupa de mão ampliando texto"
-            width="800"
-            height="533"
-            loading="lazy"
-          />
+          <picture>
+            <!-- Provide multiple sizes / formats; Unsplash supports width parameter -->
+            <source type="image/webp" srcset="
+              https://images.unsplash.com/photo-1546901071-a7a5e4b7b38b?auto=format&fit=crop&w=400&q=70&fm=webp 400w,
+              https://images.unsplash.com/photo-1546901071-a7a5e4b7b38b?auto=format&fit=crop&w=800&q=70&fm=webp 800w,
+              https://images.unsplash.com/photo-1546901071-a7a5e4b7b38b?auto=format&fit=crop&w=1200&q=70&fm=webp 1200w
+            " sizes="(max-width:600px) 100vw, 33vw">
+            <img
+              src="https://images.unsplash.com/photo-1546901071-a7a5e4b7b38b?auto=format&fit=crop&w=800&q=70"
+              alt="Lupa de mão ampliando texto"
+              width="800" height="533"
+              loading="lazy" decoding="async" />
+          </picture>
           <figcaption>Lupa</figcaption>
         </figure>
         <h3 id="lupa-title">Lupa</h3>
@@ -51,13 +86,17 @@
 
       <article class="card" aria-labelledby="micro-title">
         <figure>
-          <img
-            src="https://images.unsplash.com/photo-1581091215367-6b7e3f0f3d5a?auto=format&fit=crop&w=800&q=70"
-            alt="Microscópio de laboratório"
-            width="800"
-            height="533"
-            loading="lazy"
-          />
+          <picture>
+            <source type="image/webp" srcset="
+              https://images.unsplash.com/photo-1581091215367-6b7e3f0f3d5a?auto=format&fit=crop&w=400&q=70&fm=webp 400w,
+              https://images.unsplash.com/photo-1581091215367-6b7e3f0f3d5a?auto=format&fit=crop&w=800&q=70&fm=webp 800w
+            " sizes="(max-width:600px) 100vw, 33vw">
+            <img
+              src="https://images.unsplash.com/photo-1581091215367-6b7e3f0f3d5a?auto=format&fit=crop&w=800&q=70"
+              alt="Microscópio de laboratório"
+              width="800" height="533"
+              loading="lazy" decoding="async" />
+          </picture>
           <figcaption>Microscópio</figcaption>
         </figure>
         <h3 id="micro-title">Microscópio</h3>
@@ -69,13 +108,17 @@
 
       <article class="card" aria-labelledby="luneta-title">
         <figure>
-          <img
-            src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=70"
-            alt="Luneta apontada para o céu"
-            width="800"
-            height="533"
-            loading="lazy"
-          />
+          <picture>
+            <source type="image/webp" srcset="
+              https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=400&q=70&fm=webp 400w,
+              https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=70&fm=webp 800w
+            " sizes="(max-width:600px) 100vw, 33vw">
+            <img
+              src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=800&q=70"
+              alt="Luneta apontada para o céu"
+              width="800" height="533"
+              loading="lazy" decoding="async" />
+          </picture>
           <figcaption>Luneta</figcaption>
         </figure>
         <h3 id="luneta-title">Luneta</h3>
@@ -86,12 +129,12 @@
       </article>
     </section>
 
-    <!-- 3. Espaço para o Glossário e o Vídeo -->
-    <section class="secao-midia">
-      <div class="bloco-glossario">
-        <h2>Glossário</h2>
-        <p class="subtitulo-glossario">Definições dos principais conceitos do projeto:</p>
+    <section id="midia" class="secao-midia" aria-labelledby="midia-title">
+      <h2 id="midia-title">Glossário e Vídeo demonstrativo</h2>
 
+      <div class="bloco-glossario">
+        <h3>Glossário</h3>
+        <p class="subtitulo-glossario">Definições dos principais conceitos do projeto:</p>
         <dl class="lista-glossario">
           <dt>Fotônica</dt>
           <dd>
@@ -103,29 +146,23 @@
         </dl>
       </div>
 
-      <figure class="video-figure" aria-labelledby="video-title">
-        <h2 id="video-title">Vídeo demonstrativo</h2>
-
-        <!-- Option A: native <video> (recommended if you host the MP4 directly) -->
-        <!-- Replace the src with a direct file URL (hosted in the repo or on a CDN) -->
-        <video controls preload="metadata" width="720" poster="poster.jpg">
+      <figure class="video-figure" aria-labelledby="video-figure-caption">
+        <!-- The visible heading for this section is above; figure only holds media + caption -->
+        <!-- Recommendation: Replace the Drive URL with a streaming-friendly URL (YouTube/Vimeo or a hosted MP4 on CDN). -->
+        <video controls preload="metadata" width="720" poster="poster.jpg" tabindex="0">
           <source src="https://drive.google.com/uc?export=download&id=1rKvVWdOTf_hqmeE0OryPW5YEc3218cxk" type="video/mp4" />
+          <!-- Add captions.vtt to the repo and update the src below -->
+          <track kind="captions" srclang="pt-BR" label="Português" src="captions.vtt" default>
           Seu navegador não suporta a tag de vídeo. Você pode baixar o arquivo
-          <a href="https://drive.google.com/uc?export=download&id=1rKvVWdOTf_hqmeE0OryPW5YEc3218cxk">aqui</a>.
+          <a href="https://drive.google.com/uc?export=download&id=1rKvVWdOTf_hqmeE0OryPW5YEc3218cxk" target="_blank" rel="noopener noreferrer">aqui</a>.
         </video>
-
-        <!-- Option B: Google Drive embed fallback (works if you prefer Drive preview) -->
-        <!--
-        <iframe src="https://drive.google.com/file/d/1rKvVWdOTf_hqmeE0OryPW5YEc3218cxk/preview"
-                width="720" height="405" allow="autoplay; encrypted-media" title="Vídeo demonstrativo"></iframe>
-        -->
-
-        <figcaption>Vídeo explicando princípios ópticos — reprodução com controles.</figcaption>
+        <figcaption id="video-figure-caption">Vídeo explicando princípios ópticos — reprodução com controles. <br>
+          Legendas e transcrição disponíveis: <a href="transcript.html">Ver transcrição</a>.
+        </figcaption>
       </figure>
     </section>
   </main>
 
-  <!-- Rodapé do Site -->
   <footer role="contentinfo">
     <p>© 2026 - Desenvolvido por mim, no GitHub Codespaces</p>
   </footer>
