@@ -1,0 +1,4 @@
+imagens/
+  ├── equipamentos/
+  ├── diagrama/
+  └── icones/
