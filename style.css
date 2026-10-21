@@ -164,14 +164,16 @@ body {
   transform: translateY(-8px);
   box-shadow: var(--shadow-elevated);
 }
-.card img {
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  border-radius: calc(var(--radius) - 6px);
-  display: block;
+.imagem-lupa {
+    width: 100%;       /* Faz a imagem se ajustar à largura do container */
+    max-width: 400px;  /* Define um tamanho máximo para não distorcer */
+    height: auto;      /* Mantém a proporção original da foto */
+    display: block;
+    margin: 20px auto; /* Centraliza a imagem na tela */
 }
-.card h3 {
+
+  
+  card h3 {
   color: var(--accent);
   font-size: 1.3rem;
   font-weight: 700;
